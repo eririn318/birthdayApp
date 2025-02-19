@@ -16,6 +16,7 @@ const submitButton = document.getElementById("submit-button")
 
 submitButton.addEventListener("click", function() {
     push(referenceInDB, birthdayInputField.value)
-    birthdayInputField.value = ""
     console.log(birthdayInputField.value)
+    birthdayInputField.value = ""
+    
 })
