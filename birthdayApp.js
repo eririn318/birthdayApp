@@ -13,11 +13,11 @@ const referenceInDB = ref(database, "birthdays")
 
 const birthdayInputField = document.getElementById("birthday-input")
 const submitButton = document.getElementById("submit-button")
+const textField = document.getElementById("text")
 
 submitButton.addEventListener("click", function() {
     push(referenceInDB, birthdayInputField.value)
     //console.log(birthdayInputField.value)
-    submitButton.textContent = birthdayInputField.value
+    textField.textContent = birthdayInputField.value
     birthdayInputField.value = ""
-    
 })
